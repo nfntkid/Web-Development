@@ -10,7 +10,7 @@ Frameworks/Libaries used:
 
 
 Steps:
-1. Clone full stack repository to Local
+1. Fork repository and download zip to Local
 2. Change Directory to shopify_intern_challenge
 3. Run main.py
 4. open url --> http://127.0.0.1:8000/ 
