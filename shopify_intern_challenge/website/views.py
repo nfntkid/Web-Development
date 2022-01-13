@@ -14,7 +14,15 @@ views = Blueprint('views', __name__)
 
 
 
-# CREATE THE HOMEPAGE VIEW 
+
+'''
+-This is the flask route to the homepage.
+-This is the parent page, represented as '/'.
+-This accepts GET and POST requets.
+-Upon POST request, request the data for the user notes 
+-If note length greater than 1 character, create object and commit to database
+-Flash success method
+-Return Homepage template'''
 @views.route('/', methods=["GET", "POST"])
 @login_required
 def home():
@@ -27,16 +35,18 @@ def home():
             db.session.add(new_note)
             db.session.commit()
             flash('Note added.', category='success')
-
     return render_template('home.html',user= current_user)
 
 
 
 
+'''
 
-
-
-
+-This is the flask route to the delete note method.
+-The child page, represented as '/delete-note'.
+-This accepts ONLY POST requets.
+-Query the note being selected, and commit changes
+-Can only delete note of current user'''
 @views.route('/delete-note', methods=['POST'])
 def delete_note():
     note = json.loads(request.data)
