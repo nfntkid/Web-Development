@@ -15,4 +15,4 @@ Steps:
 3. Run main.py
 4. open url --> http://127.0.0.1:8000/ 
 
-Video Presentation --> https://youtu.be/PFFe-m5iQ2s
+Video presentation of application --> https://youtu.be/PFFe-m5iQ2s
