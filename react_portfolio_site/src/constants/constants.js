@@ -7,7 +7,7 @@ export const projects = [
     title: "Full Stack image repository",
     description: "",
     image: "/images/CRUD_APP.png",
-    tags: ["Bootstrap", "Flask", "Jinja", "SQL Lite"],
+    tags: ["bootstrap", "flask", "jinja", "sql-lite"],
     source:
       "https://github.com/nfntkid/web-dev/tree/main/shopify_intern_challenge",
     visit: "https://google.com",
@@ -17,9 +17,19 @@ export const projects = [
     title: "Ethereum Price Analysis",
     description: "",
     image: "/images/PLOT_CHART.png",
-    tags: ["Bootstrap", "Flask", "Jinja", "SQL Lite"],
+    tags: ["matplotlib", "pandas_datareader", "mplfinance"],
     source:
-      "https://github.com/nfntkid/web-dev/tree/main/shopify_intern_challenge",
+      "https://github.com/nfntkid/Data-Science/tree/main/ethereum_price_analysis",
+    visit: "https://google.com",
+    id: 0,
+  },
+  {
+    title: "Startup Analysis",
+    description: "",
+    image: "/images/startup_output.png",
+    tags: ["jupyter notebook", "pandas"],
+    source:
+      "https://github.com/nfntkid/Data-Science/tree/main/startup_analysis",
     visit: "https://google.com",
     id: 0,
   },
@@ -37,8 +47,4 @@ export const TimeLineData = [
   { year: 2021, text: "Started my full stack journey" },
 ];
 
-export const data = [
-  { number: 200, text: "Students" },
-  { number: 1900, text: "Github Followers" },
-  { number: 5000, text: "Github Stars" },
-];
+export const data = [{ number: 200, text: "Students" }];
