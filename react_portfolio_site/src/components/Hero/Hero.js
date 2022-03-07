@@ -16,12 +16,12 @@ const Hero = (props) => (
         <br />
       </SectionTitle>
       <SectionText>
-        Music producer, Artist, Developer, & Teacher
+        Music producer, Artist, Developer, Teacher
         <br />
         "The Future is Data"
       </SectionText>
-      <Button onclick={() => (window.location = "https://nfntny.com")}>
-        Explore the Infinite
+      <Button onclick={() => (window.location.href = "https://nfntny.com")}>
+        Enter the Infinite
       </Button>
     </LeftSection>
   </Section>
